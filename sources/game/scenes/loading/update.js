@@ -8,7 +8,7 @@ function update() {
 
         if (this.$.timeout >= 1000) {
 
-            this.load('demo');
+            this.load('level');
         }
     }
 }
