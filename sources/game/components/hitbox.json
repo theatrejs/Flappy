@@ -1,16 +1,16 @@
 {
     "x": 0,
     "y": 0,
-    "width": 64,
-    "height": 64,
-    "type": "dynamic",
+    "width": 16,
+    "height": 16,
+    "type": "movable",
     "collideable": {
 
-        "static": {
+        "limit": {
 
             "type": "snippets",
-            "scope": "common",
-            "name": "handle-hitbox"
+            "scope": "level",
+            "name": "reset-position"
         }
     }
 }

@@ -1,0 +1,69 @@
+{
+    "name": "touch-screen",
+    "components": [
+
+        {
+            "name": "cameras",
+            "parameters": [
+
+                {
+                    "$camera": {
+
+                        "type": "$",
+                        "name": "hud"
+                    },
+                    "opacity": 1
+                }
+            ]
+        },
+        {
+            "name": "images",
+            "parameters": [
+
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "touch-screen-64x32@1x"
+                    },
+                    "frames": [
+
+                        [0, 0, 64, 32]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 0, 0, 64, 32],
+                    "opacity": 1,
+                    "elapsed": 0
+                }
+            ]
+        },
+        {
+            "name": "inputs",
+            "parameters": [
+
+                {
+                    "actions": ["CLICK_LEFT", "GAMEPAD_A", "KEY_SPACE"],
+                    "state": "DOWN",
+                    "$command": {
+
+                        "type": "snippets",
+                        "scope": "level",
+                        "name": "start-game"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "parameters": {
+
+                "x": 48,
+                "y": 40,
+                "z": 0
+            }
+        }
+    ]
+}

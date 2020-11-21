@@ -1,0 +1,33 @@
+{
+    "name": "limit",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "forces"
+        },
+        {
+            "name": "hitbox",
+            "parameters": {
+
+                "x": 0,
+                "y": 0,
+                "width": 16,
+                "height": 144,
+                "type": "limit",
+                "collideable": {}
+            }
+        },
+        {
+            "name": "position",
+            "parameters": {
+
+                "x": -175,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ]
+}

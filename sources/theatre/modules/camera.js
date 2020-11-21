@@ -43,6 +43,11 @@ function Camera(context, name, screen) {
         images.splice(target, 0, image);
     }
 
+    function clean() {
+
+        images = [];
+    }
+
     function idle() {
 
         this.shaking = {
@@ -72,6 +77,11 @@ function Camera(context, name, screen) {
 
     function render() {
 
+        if (this.screen.opacity === 0) {
+
+            return;
+        }
+
         images.forEach((image) => {
 
             const {destination, frame, opacity, source} = image;
@@ -89,7 +99,7 @@ function Camera(context, name, screen) {
 
                 const alpha = context.globalAlpha;
 
-                context.globalAlpha = opacity;
+                context.globalAlpha = opacity * this.screen.opacity;
 
                 const canvas = {
 
@@ -115,7 +125,7 @@ function Camera(context, name, screen) {
                     source,
                     frame.x - offset.left * (frame.width / canvas.destination.width),
                     frame.y - offset.top * (frame.height / canvas.destination.height),
-                    frame.width - offset.right * (frame.width / canvas.destination.width) - Math.abs(offset.left * (frame.height / canvas.destination.height)),
+                    frame.width - offset.right * (frame.width / canvas.destination.width) - Math.abs(offset.left * (frame.width / canvas.destination.width)),
                     frame.height - offset.bottom * (frame.height / canvas.destination.height) - Math.abs(offset.top * (frame.height / canvas.destination.height)),
                     canvas.destination.x - offset.left,
                     canvas.destination.y - offset.top,
@@ -126,8 +136,6 @@ function Camera(context, name, screen) {
                 context.globalAlpha = alpha;
             }
         });
-
-        images = [];
     }
 
     function shake(x, y, duration, easing = Ease.reverse(Ease.easeOut(2))) {
@@ -203,12 +211,14 @@ function Camera(context, name, screen) {
         'y': screen.y,
         'width': screen.width,
         'height': screen.height,
-        'scale': screen.scale
+        'scale': screen.scale,
+        'opacity': screen.opacity
     };
 
     this.shaking = shaking;
 
     this.add = add;
+    this.clean = clean;
     this.idle = idle;
     this.look = look;
     this.render = render;

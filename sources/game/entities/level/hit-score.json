@@ -1,0 +1,32 @@
+{
+    "name": "hit-score",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "hitbox",
+            "parameters": {
+
+                "x": 0,
+                "y": 0,
+                "width": 16,
+                "height": 144,
+                "type": "hit-score",
+                "collideable": {
+
+                    "player": {
+
+                        "type": "snippets",
+                        "scope": "level",
+                        "name": "hit-score"
+                    }
+                }
+            }
+        },
+        {
+            "name": "position"
+        }
+    ]
+}

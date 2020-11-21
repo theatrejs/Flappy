@@ -2,11 +2,9 @@
 
 # Flappy
 
-> *Hello, friend.*
+<img src="./documentation/preview.png" width="640">
 
-## Overview
-
-> *Game development is in progress...*
+Welcome ! [Flappy](https://theatrejs.github.io/Flappy/index.html) is built in plain HTML5/JavaScript with a framework I am developping.
 
 ## Theatre
 

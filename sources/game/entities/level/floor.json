@@ -1,0 +1,224 @@
+{
+    "name": "floor",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "hitbox",
+            "parameters": {
+
+                "x": 0,
+                "y": 2,
+                "width": 160,
+                "height": 14,
+                "type": "danger",
+                "collideable": {
+
+                    "limit": {
+
+                        "type": "snippets",
+                        "scope": "level",
+                        "name": "reset-position"
+                    }
+                }
+            }
+        },
+        {
+            "name": "images",
+            "parameters": [
+
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [16, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [32, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [48, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [64, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [80, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [96, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [112, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [128, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [144, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "parameters": {
+
+                "x": 0,
+                "y": 96,
+                "z": 3
+            }
+        }
+    ]
+}

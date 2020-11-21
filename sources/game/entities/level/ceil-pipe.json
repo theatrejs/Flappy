@@ -1,0 +1,60 @@
+{
+    "name": "ceil-pipe",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "images",
+            "parameters": [
+
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [1, 0, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "foreground-16x16@1x"
+                    },
+                    "frames": [
+
+                        [2, 0, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [16, 0, 0, 16, 16],
+                    "opacity": 1,
+                    "elapsed": 0
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "parameters": {
+
+                "x": 0,
+                "y": 0,
+                "z": 4
+            }
+        }
+    ]
+}

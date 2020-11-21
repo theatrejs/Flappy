@@ -1,0 +1,38 @@
+{
+    "name": "chunk",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "hitbox",
+            "parameters": {
+
+                "x": 0,
+                "y": 0,
+                "width": 64,
+                "height": 16,
+                "type": "chunk",
+                "collideable": {
+
+                    "limit": {
+
+                        "type": "snippets",
+                        "scope": "level",
+                        "name": "reload-chunk"
+                    }
+                }
+            }
+        },
+        {
+            "name": "position",
+            "parameters": {
+
+                "x": 0,
+                "y": 48,
+                "z": 0
+            }
+        }
+    ]
+}

@@ -5,9 +5,12 @@ function destroy() {
 
     this.$.controllers.destroy();
 
+    delete this.$.best;
     delete this.$.camera;
     delete this.$.controllers;
-    delete this.$.origins;
+    delete this.$.debugging;
+    delete this.$.hud;
+    delete this.$.score;
     delete this.$.world;
 }
 

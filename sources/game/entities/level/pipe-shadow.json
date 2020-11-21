@@ -1,0 +1,60 @@
+{
+    "name": "pipe-shadow",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "images",
+            "parameters": [
+
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "pipe-shadow-16x8@1x"
+                    },
+                    "frames": [
+
+                        [0, 1, 16, 8]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 0, 0, 16, 8],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "idle",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "pipe-shadow-16x8@1x"
+                    },
+                    "frames": [
+
+                        [0, 2, 16, 8]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 8, 0, 16, 8],
+                    "opacity": 1,
+                    "elapsed": 0
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "parameters": {
+
+                "x": 0,
+                "y": 104,
+                "z": 2
+            }
+        }
+    ]
+}

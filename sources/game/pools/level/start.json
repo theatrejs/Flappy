@@ -1,0 +1,146 @@
+[
+    {
+        "name": "limit",
+        "entity": {
+
+            "scope": "level",
+            "name": "limit"
+        }
+    },
+    {
+        "name": "background",
+        "entity": {
+
+            "scope": "level",
+            "name": "background"
+        }
+    },
+    {
+        "name": "clouds-1",
+        "entity": {
+
+            "scope": "level",
+            "name": "clouds"
+        }
+    },
+    {
+        "name": "clouds-2",
+        "entity": {
+
+            "scope": "level",
+            "name": "clouds"
+        },
+        "components": [
+
+            {
+                "name": "position",
+                "parameters": {
+
+                    "x": 160
+                }
+            }
+        ]
+    },
+    {
+        "name": "ceil-1",
+        "entity": {
+
+            "scope": "level",
+            "name": "ceil"
+        }
+    },
+    {
+        "name": "ceil-2",
+        "entity": {
+
+            "scope": "level",
+            "name": "ceil"
+        },
+        "components": [
+
+            {
+                "name": "position",
+                "parameters": {
+
+                    "x": 160
+                }
+            }
+        ]
+    },
+    {
+        "name": "floor-1",
+        "entity": {
+
+            "scope": "level",
+            "name": "floor"
+        }
+    },
+    {
+        "name": "floor-2",
+        "entity": {
+
+            "scope": "level",
+            "name": "floor"
+        },
+        "components": [
+
+            {
+                "name": "position",
+                "parameters": {
+
+                    "x": 160
+                }
+            }
+        ]
+    },
+    {
+        "name": "waves-1",
+        "entity": {
+
+            "scope": "level",
+            "name": "waves"
+        }
+    },
+    {
+        "name": "waves-2",
+        "entity": {
+
+            "scope": "level",
+            "name": "waves"
+        },
+        "components": [
+
+            {
+                "name": "position",
+                "parameters": {
+
+                    "x": 160
+                }
+            }
+        ]
+    },
+    {
+        "name": "bird",
+        "entity": {
+
+            "scope": "level",
+            "name": "bird"
+        }
+    },
+    {
+        "name": "touch-screen",
+        "entity": {
+
+            "scope": "level",
+            "name": "touch-screen"
+        }
+    },
+    {
+        "name": "score",
+        "entity": {
+
+            "scope": "level",
+            "name": "score"
+        }
+    }
+]

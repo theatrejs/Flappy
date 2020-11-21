@@ -1,6 +1,4 @@
-import {Camera} from 'modules/camera.js';
 import {Controllers} from 'modules/controllers.js';
-import {World} from 'modules/world.js';
 
 function setup() {
 
@@ -8,27 +6,13 @@ function setup() {
 
     this.$.controllers = new Controllers(this.element, [
 
+        ...this.assets.datasets.debug['inputs'](),
         ...this.assets.datasets.level['inputs']()
     ]);
 
-    this.$.origin = {
-
-        'x': () => 0,
-        'y': () => 0,
-        'z': () => 0,
-        'scale': () => 1
-    };
-
-    this.$.camera = new Camera(this.context, 'default', {
-
-        'x': () => 0,
-        'y': () => 0,
-        'width': () => this.size.width,
-        'height': () => this.size.height,
-        'scale': () => 1
-    });
-
-    this.$.world = new World(this, () => this.components);
+    this.$.camera = this.snippets.common['setup-camera']('default', 'contain-framed', 160, 144, 1);
+    this.$.hud = this.snippets.common['setup-camera']('hud', 'contain-framed', 160, 144, 1);
+    this.$.world = this.snippets.common['setup-world']();
 }
 
 export {setup};

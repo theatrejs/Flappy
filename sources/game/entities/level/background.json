@@ -1,0 +1,57 @@
+{
+    "name": "background",
+    "components": [
+
+        {
+            "name": "cameras"
+        },
+        {
+            "name": "forces"
+        },
+        {
+            "name": "images",
+            "parameters": [
+
+                {
+                    "name": "sky",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "background-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 0, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 0, 0, 160, 96],
+                    "opacity": 1,
+                    "elapsed": 0
+                },
+                {
+                    "name": "water",
+                    "$source": {
+
+                        "type": "images",
+                        "scope": "level",
+                        "name": "background-16x16@1x"
+                    },
+                    "frames": [
+
+                        [0, 1, 16, 16]
+                    ],
+                    "frame": 0,
+                    "framerate": 8,
+                    "destination": [0, 96, 0, 160, 48],
+                    "opacity": 1,
+                    "elapsed": 0
+                }
+            ]
+        },
+        {
+            "name": "position"
+        }
+    ]
+}
